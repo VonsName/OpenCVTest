@@ -27,6 +27,9 @@ int main(int argc,char *argv[])
 	//将一张RGB图像转为灰度图像
 	cvtColor(src, output, CV_BGR2GRAY);
 	imshow("output window", output);
+
+	//保存图片
+	imwrite("C:\\Users\\Administrator\\Desktop\\2.jpg", output);
 	waitKey(0);
 	return 0;
 }
